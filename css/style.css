@@ -1,5 +1,38 @@
-h1 {
-    color: red;
-    background-color: yellow;
-    font-family: sans-serif;
+body {
+    color: black;
+    background: red;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
 }
+nav {
+  text-align: end;
+  
+}
+.headernav {
+  padding-right: 20px;
+
+}
+#headertext1 {
+    margin-bottom: 1px;
+  }
+  #headertext2 {
+    margin-top: 1px;
+  }
+  .filter {
+    border-style: solid;
+    border-radius: 50px;
+    padding: 7px;
+    border-color: lightgrey;
+    
+  }
+  .filter, #filterhead {
+    font-weight: 550;
+    
+  }
+  #info {
+    color: lightgrey;
+  }
+  
+      
+  
+  
+  
