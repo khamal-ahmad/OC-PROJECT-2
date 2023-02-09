@@ -1,14 +1,34 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('https://fonts.google.com/specimen/Raleway');
+}
+
+
 body {
     color: black;
     background-color: white;
     font-family: Raleway, Arial, Helvetica, sans-serif;
 }
+
 nav {
-  text-align: end;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 1200px;
   
 }
+.bookiicon {
+  padding: 20px;
+}
+
+.headernavcont {
+  display: flex;
+}
+
 .headernav {
   padding-right: 20px;
+  padding-bottom: 50px;
+  justify-content: end;
 
 }
 #headertext1 {
@@ -17,22 +37,221 @@ nav {
   #headertext2 {
     margin-top: 1px;
   }
+  .containerfilter {
+    display: flex;
+
+  }
+  .filterhead {
+    padding: 15px;
+    padding-right: 20px;
+  }
   .filter {
     border-style: solid;
     border-radius: 50px;
     padding: 7px;
     border-color: lightgrey;
-    
+    margin: 5px;
+    display: inline-flex;
+    float: left;
   }
-  .filter, #filterhead {
+  .filter, .filterhead {
     font-weight: 550;
     
   }
-  #info {
+.filter {
+  transition: all .2s ease-in-out;
+}
+
+.filter:hover {
+  transform: scale(1.3);
+  background-color: #0065FC;
+}
+  .info {
     color: lightgrey;
+    font-size: 13px;
+    display: flex;
+    width: 320px;
+    padding-top: 10px;
+    margin: 5px 10px 15px 0px;
+
   }
+  #info {
+    padding-left: 10px;
+  }
+
+.ammp {
+  display: inline-flex;
+  /* flex-direction: column; */
+
+  justify-content: space-evenly;
+  max-width: 1200px;
+}
+  .am {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* height: 700px; */
+    width: 800px;
+    background-color: lightgrey;    
+
+  } 
+  .amh{
+    height: 50px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+  }
+  .am1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 400px;
+  }
+  #showmore {
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 30px;
+   } 
+  .itemam {
+    width: 200px;
+    height: 150px;
+    border: 5px;
+    /* display: flex; */
+    justify-content: center;
+    border-color: white;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+    justify-content: space-around;
+  }
+  .mp {
+    height: 700px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    /* padding-right: 50px; */
+    background-color: lightgrey;
+    margin-left: 10px;
+  }
+  .mph {
+    height: 50px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+  }
+  .mp1 {
+    
+  }
+  .itemmp {
+    width: 340px; 
+    height: 149px;
+    display: flex; 
+    border: 5px;
+    border-color: white;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+    justify-content: space-around;
+    padding: 2px;
+  }
+.act {
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.act2 {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+flex-basis: 0;
+width: 1200px;
+
+}
+.act2 {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 1200px;
+}
+
+.itemact1 {
+  flex: 2 0 0px;
+  border: 5px;
+  border-radius: 20px;
+  border-style: solid;
+  background-color: white;
+  width: auto;
+}
+.itemact2 {
+  flex: 0 0 100px;
+  width: auto;
+  border: 5px;
+  border-radius: 20px;
+  border-style: solid;
+  background-color: white;
+}
+.itemact3 {
+  flex: 2 0 100px;
+  border: 5px;
+  border-radius: 20px;
+  border-style: solid;
+  background-color: white;
+  width: auto;
+}
+.itemact4 {
+  flex: 0 0 100px;
+  width: auto;
+  border: 5px;
+  border-radius: 20px;
+  border-style: solid;
+  background-color: white;
+}      
+ footer {
+  display: flex;
+  flex-basis: 0;
+
+
+ } 
+.about {
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 25px;
+}
+.about {
+  width: 400px;
+  line-height: 50px;
+}  
+.oa {
+  width: 400px;
+  line-height: 50px;
+}
+.ass {
+  width: 400px;
+  line-height: 50px;
+}
+#ft1, #ft2, #ft3 {
+  font-weight: bold;
+}
+@media screen and (max-width: 992px) {
   
-      
   
-  
-  
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+@media all and (max-width: 768px) {
+  body {
+    min-width: 300px;
+  }
+  .ammp {
+    display: block;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    width: 50%;
+  }
+}
