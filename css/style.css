@@ -3,7 +3,6 @@
   src: url('https://fonts.google.com/specimen/Raleway');
 }
 
-
 body {
   color: black;
   background-color: white;
@@ -21,6 +20,15 @@ nav {
 .bookiicon {
   padding: 20px;
   align-items: baseline;
+}
+
+.logo {
+  width:100px;height:50px; 
+  margin-left: -15px;
+}
+
+header {
+  padding: 0px 30px;
 }
 
 .headernavcont {
@@ -107,7 +115,7 @@ nav {
 
 .form {
   border-radius: 20px;
-  margin: 7px;
+  margin: 7px 7px 7px 0Px;
 }
 
 #form-1 {
@@ -122,7 +130,7 @@ nav {
 
 form .fa-location-dot {
   background-color: #F2F2F2;
-  padding: 6px 10px 0px 15px;
+  padding: 6px 10px 0px 10px;
   border-bottom-left-radius: 9px;
   border-top-left-radius: 9px;
   height: 26px;
@@ -133,29 +141,55 @@ form .fa-location-dot {
 form input {
   font-weight: 550;
   height: 25px;
+  border-width: 1px;
+  border-color: #fafafa;
+  border-top-style: hidden;
+  border-left-style: none;
+  padding-bottom: 3px;
 }
 
-button {
+span.button {
+  background: #0264fc;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  color: white;
+  border-color:white ;
+  padding: 6px;
+} 
+
+:placeholder-shown {
+  padding-top: 3px;
+  padding-left: 10px;
+}
+
+/* button {
   background: #0065FC;
   border-top-right-radius: 9px;
   border-bottom-right-radius: 9px;
   height: 31px;
+  border: none;
   /* padding: 10px 5px; */
   /* letter-spacing: 1px; */
-}
+} */
 
 .filter,
 .filterhead {
   font-weight: 550;
 } 
+.filterhead {
+  padding-left: 0px;
+}
 
 .filter {
   transition: all .2s ease-in-out;
 }
 
 .filter:hover {
-  transform: scale(1.3);
-  background-color: #0065FC;
+  transform: scale(1.06);
+}
+
+.filter:hover i {
+  background-color: #bbd3f6;
 }
 
 .info {
@@ -175,8 +209,7 @@ button {
 .flex-container {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
-  /* width: fit-content; */
+  padding: 0px 30px;
   
 }
 
@@ -185,7 +218,7 @@ button {
   background-color: lightgrey;
   border-radius: 20px;
   justify-items: flex-start;
-  margin-right: 5px;
+  margin-right: 40px;
 }
 
 .accomodation {
@@ -193,6 +226,8 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 1px;
+
 }
 
 .accomodation-item {
@@ -200,7 +235,7 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     justify-content: space-around;
 }
@@ -210,9 +245,11 @@ button {
 }
 
 .amh {
-  height: 30px;
+  /* height: 30px; */
   padding-left: 25px;
   margin-left: 15px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .accomodation-item-content {
@@ -228,12 +265,13 @@ button {
 .accomodation-icon {
   display: flex;
   margin: 0px;
-  margin-left: 0px;
+  margin-left: -2px;
   padding: 0px;
+  color: #0065FC;
 }
 
 .accomodation-image-wrapper {
-  min-height: 170px;
+  min-height: 110px;
   
 }
 .img-accomodation {
@@ -241,7 +279,7 @@ button {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   width: 100%;
-  height: 170px;
+  height: 130px;
 }
 
 
@@ -249,22 +287,21 @@ button {
   line-height: 0px;
   padding-left: 10px;
 }
-
+.accomodation-name {
+  margin: 13px 0px 14px 0px;
+}
 .accomodation-name-price {
   padding: 0px;
-  margin: 20px;
-  margin-left: 0px;
-}
-.accomodation-icon {
-  color: #0065FC;
+  margin: 20px 0px 14px 0px;
 }
 
 .showmore {
   padding-top: 0px;
   padding-left: 20px;
   padding-bottom: 20px;
-  height: 30px;
-  margin: 50px 0px 0px 15px;
+  /* height: 30px; */
+  margin: 30px 0px 0px 20px;
+  text-decoration: none;
 }
 
 aside.most-popular {
@@ -282,7 +319,7 @@ aside.most-popular {
   flex-wrap: wrap;
   background-color: lightgrey;
   border-radius: 20px;
-  min-width: 400px;
+  min-width: 450px;
 }
 
 .most-popular-header {
@@ -292,7 +329,7 @@ aside.most-popular {
 }
 .most-popular-icon {
   justify-content: center;
-  margin-right: 20px;
+  margin-right: 40px;
 
 }
 
@@ -300,17 +337,18 @@ aside.most-popular {
   height: 50px;
   padding-left: 10px;
   margin-bottom: 0px;
-  margin-left: 20px;
+  margin-left: 28px;
 }
 
 .most-popular-items {
-  display: flex;
+
   flex-direction: column;
   justify-content: space-evenly;
+  margin: -12px 15px 15px 15px;
 }
 
 .most-popular-item {
-  flex: 1;
+  /* flex: 1; */
   border: 5px;
   border-color: white;
   background-color: white;
@@ -325,29 +363,38 @@ aside.most-popular {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   padding: 5px 0px 5px 5px;
-  height: 215px;
-  width: 160px;
+  width: 150px;
+  height: 100%;
 }
 .img-most-popular-wrapper {
-  min-height: 200px;
+  max-height: 150px;
+  /* max-height: 200px; */
 }
-
+.most-popular-text-wrapper {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 #long-name {
   word-wrap: break-word;
 }
 
 .most-popular-text {
   padding-left: 10px;
+  padding-right: 10px;
 }
 .most-popular-icon-rating {
-  margin: 100px 0px 0px 10px;
+  margin: 0px 0px 20px 10px;
   color: #0065FC;
 }
-
-
+.acth {
+  margin: 80px 0px 20px 10px;
+}
 .activities-container {
   display: flex;
   flex-direction: column;
+  margin: 0px 0px 20px 20px;
 }
 
 .activity {
@@ -355,7 +402,8 @@ aside.most-popular {
   flex-direction: row;
   justify-content: space-between;
   /* height: auto; */
-  align-items: center;
+  /* align-items: center; */
+  margin: 0px;
 }
 
 .activity-item-2,
@@ -371,7 +419,7 @@ aside.most-popular {
   border: 1px;
   border-radius: 20px;
   background-color: white;
-  margin: 10px;
+  margin: 0px;
 }
 
 .activity-item-1,
@@ -394,29 +442,38 @@ aside.most-popular {
   margin-bottom: 20px;
 }
 .activity-image-wrapper {
-  min-height: 60%;
+  width: 320px;
 }
 .img-activity-1,
 .img-activity-3 {
   border-radius: 20px 20px 0px 0px;
-  max-width: 100%;
-  height: 560px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
-.img-activity-4-1,
+.img-activity-4-1 {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 158px;
+}
 .img-activity-4-2 {
   border-radius: 20px 20px 0px 0px;
-  max-width: 100%;
-  height: 230px;
+  width: 100%;
+  height: 158px;
+  object-fit: cover;
 }
+
 .img-activity-2-1 {
   border-radius: 20px 20px 0px 0px;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 .img-activity-2-2 {
   border-radius: 20px 20px 0px 0px;
-  max-width: 100%;
-  height: 185px;
+  width: 100%;
+  height: 137px;
+  object-fit: cover;
 }
 .activity-text {
   padding-left: 15px;
