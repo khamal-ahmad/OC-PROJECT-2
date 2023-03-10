@@ -149,11 +149,13 @@ form .fa-location-dot {
 form input {
   font-weight: 550;
   height: 25px;
-  border-width: 1px;
-  border-color: #fafafa;
-  border-top-style: hidden;
-  border-left-style: none;
+  /* border-width: 1px; */
+  /* border-color: #fafafa; */
+  /* border-top-style: solid; */
+  /* border-bottom-style: solid; */
   padding-bottom: 3px;
+  border-top: 1px solid #fafafa;
+
 }
 
 span.button {
@@ -345,7 +347,9 @@ aside.most-popular {
 
 .mph {
   height: 50px;
-  padding-left: 10px;
+  padding-left: 10px;]
+
+
   margin-bottom: 0px;
   margin-left: 28px;
 }
@@ -366,6 +370,9 @@ aside.most-popular {
   margin: 20px;
   padding: 2px;
   display: flex;
+}
+.most-popular-items a {
+  text-decoration: none;
 }
 
 .img-most-popular {
@@ -495,21 +502,19 @@ aside.most-popular {
 footer {
   display: flex;
   flex-basis: 0;
-  /* width: 1400px; */
   margin-top: 50px;
   background-color: #F2F2F2;
   justify-content: space-between;
-
-
 }
-
-.about {}
 
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   line-height: 25px;
+}
+footer a {
+  text-decoration: none;
 }
 
 .about {
@@ -522,7 +527,7 @@ ul {
   line-height: 50px;
 }
 
-.ass {
+.assistance {
   width: 400px;
   line-height: 50px;
 }
@@ -562,4 +567,8 @@ ul {
   justify-content: center;
   margin: 40px 0px 20px 0px;
 }
+}
+
+@media (max-width:768px) {
+  copy from above
 }
